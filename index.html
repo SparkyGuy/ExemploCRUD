@@ -4,6 +4,13 @@
         <link rel="icon" type="image/png" sizes="16x16" href="icons8-livros-color-16.png">
         <link rel="icon" type="image/png" sizes="32x32" href="icons8-livros-color-32.png">
         <link rel="icon" type="image/png" sizes="96x96" href="icons8-livros-color-96.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dangrek&display=swap" rel="stylesheet">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Registre Sua Escola!</title>
@@ -15,6 +22,12 @@
                 background-image: url("background2.jpg");
                 background-position: center center;
                 background-size: cover;
+             
+            }
+
+            .background-image{
+                filter:blur(4px);
+
             }
             #ui{
                 background-color:#474646;
@@ -27,9 +40,13 @@
             #ui label,h1,a {
                 color: #fff;
             }
-            
-            li:hover{
-                color: black;
+            #h1{
+                font-family: 'Anton', sans-serif;
+
+            }
+             #nav-link a :hover{
+
+                background-color:LightCyan;color: black;
             }
         </style>    
 
@@ -60,15 +77,6 @@
                 <li class="nav-item px-md-2">
                     <a class="nav-link" style="color: #fff;" href="#">Datas e Eventos</a>
                 </li>
-               <!--- <li class="nav-item px-md-">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item px-md-">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                
-                <li class="nav-item px-md-2">
-                  <a class="nav-link disabled" href="#">Disabled</a>-->
                 </li>
               </ul>
             </div>
@@ -81,7 +89,7 @@
                     <div class="col-lg-3"></div>
                     <div class="col-lg-6">
                         <div id="ui">
-                            <h1 class="text-center">Registre Sua Escola</h1>
+                            <h1 class="text-center" style="font-family: 'Dangrek', cursive;">REGISTRE SUA ESCOLA</h1>
                             <form class="form-group text-center">
                                 <div class="row">
                                         <div class="col-lg-6">
