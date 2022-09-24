@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dangrek&display=swap" rel="stylesheet">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Registre Sua Escola!</title>
+        <title>Registre Sua Escola</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
@@ -22,13 +22,14 @@
                 background-image: url("background2.jpg");
                 background-position: center center;
                 background-size: cover;
-             
             }
 
-            .background-image{
-                filter:blur(4px);
+            .navbar .navbar-nav .nav-link:hover{
+                background-color:#fd7921;
+                border: 5px;
 
             }
+            
             #ui{
                 background-color:#474646;
                 padding:30px;
@@ -39,48 +40,63 @@
             }
             #ui label,h1,a {
                 color: #fff;
+                
             }
             #h1{
                 font-family: 'Anton', sans-serif;
 
             }
-             #nav-link a :hover{
-
-                background-color:LightCyan;color: black;
+            .btn-outline-success{
+                color: white;
+                background-color:#fd7921;
+                border-color: #fd7921;
+            }
+            .btn:first-child:hover, :not(.btn-check)+.btn:hover{
+                background-color:#fd7921;
+                border-color: #fd7921;
             }
         </style>    
-
+            
 
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg" style="opacity:0.9; background-color:#000000;">
-            <a class="navbar-brand px-md-3 py-1" href="#">
-                <img src="logolearn.png" width="213" height="62" class="d-inline-block align-top"  style="justify-content: center;opacity:0.8;" alt="">
-            </a>
-            <div class="collapse navbar-collapse px-md-5" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active px-md-2">
-                  <a class="nav-link" style="color: #fff;" href="#">Início</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="logolearn.png" style="margin-left:5px;" width="213" height="62" width="30" height="30" alt="">
+              </a>
+            </button>
+          
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                  <a class="nav-link " href="#">Início</a>
                 </li>
                 <li class="nav-item px-md-2">
-                  <a class="nav-link" style="color: #fff;" href="#">Seja um parceiro</a>
+                  <a class="nav-link " href="#">Seja um parceiro</a>
                 </li>
                 <li class="nav-item px-md-2">
-                    <a class="nav-link" style="color: #fff;" href="#">Preços</a>
+                    <a class="nav-link " href="#">Preços</a>
                 </li>
                 <li class="nav-item px-md-2">
-                    <a class="nav-link" style="color: #fff;" href="#">Termos e Condições</a>
+                    <a class="nav-link " href="#">Termos e Condições</a>
                 </li>
                 <li class="nav-item px-md-2">
-                    <a class="nav-link" style="color: #fff;" href="#">Inscreva Sua Escola</a>
+                    <a class="nav-link " href="#">Inscreva Sua Escola</a>
                 </li>
                 <li class="nav-item px-md-2">
-                    <a class="nav-link" style="color: #fff;" href="#">Datas e Eventos</a>
+                    <a class="nav-link " href="#">Datas e Eventos</a>
                 </li>
-                </li>
+        
               </ul>
+              <form class="form-inline my-2 my-lg-0" style="margin:auto;">
+                <div class="input-group mb-3 ">
+                    <input class="form-control mr-sm-2 mt-3" type="search"  aria-label="Search">
+                    <button class="btn btn-outline-success mr-sm-2 mt-3"  type="submit">Procurar</button>
+                </div>
+              </form>
             </div>
-        </nav>
+          </nav>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
@@ -140,12 +156,12 @@
                                     <option>Ensino Médio</option>
                                     <option>Todos</option>         
                                 </select>
-                                <br> 
+                                <br>
                             </div>
-                            
-                            <input type="submit" name="submit" value="submit" class="btn btn-primary btn-block">             
-                        </div>    
-                    
+                                <input type="submit" name="submit" value="Registrar Escola" class="btn btn-primary">
+                                
+                                    
+                        
                             </form>
                     </div>
                     <div class="col-lg-3"></div>
