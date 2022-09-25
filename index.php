@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <link rel="icon" type="image/png" sizes="16x16" href="icons8-livros-color-16.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="icons8-livros-color-32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="icons8-livros-color-96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/imagesicons8-livros-color-16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/imagesicons8-livros-color-32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/imagesicons8-livros-color-96.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
              <style type="text/css">
             body{
-                background-image: url("background2.jpg");
+                background-image: url("/images/background2.jpg");
                 background-position: center center;
                 background-size: cover;
             }
@@ -62,7 +62,7 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">
-                <img src="logolearn.png" style="margin-left:5px;" width="213" height="62" width="30" height="30" alt="">
+                <img src="/images/logolearn.png" style="margin-left:5px;" width="213" height="62" width="30" height="30" alt="">
               </a>
             </button>
           
@@ -106,59 +106,35 @@
                     <div class="col-lg-6">
                         <div id="ui">
                             <h1 class="text-center" style="font-family: 'Dangrek', cursive;">REGISTRE SUA ESCOLA</h1>
-                            <form class="form-group text-center">
+                            <form action="conexao.php" method="POST" class="form-group text-center">
                                 <div class="row">
                                         <div class="col-lg-6">
                                         <label>Nome da escola</label>
-                                        <input type="text" name="username" placeholder="Escola" class="form-control">
+                                        <input type="text" name="nome_escola" placeholder="Escola" class="form-control">
                                     </div>   
 
                                     <div class="col-lg-6">
                                         <label>Telefone</label>
-                                        <input type="text" name="username" placeholder="Ex: (XX)XXXX-XXXX" class="form-control">
+                                        <input type="text" name="tel_escola" placeholder="Ex: (XX)XXXX-XXXX" class="form-control">
                                     </div>   
                                 </div>
                                 <br>
                                 <label>Endereço, Nº e Bairro</label>
-                                <input type="email" name="username" placeholder="Ex: Capitão Bastos 233, Residencial América" class="form-control">
+                                <input type="text" name="end_escola" placeholder="Ex: Capitão Bastos 233, Residencial América" class="form-control">
                                 <br>
                                 <div class="row">
                                     <div class="col-lg-6">
                                     <label>CNPJ</label>
-                                    <input type="text" name="username" placeholder="Ex: XX.XXX.XXX/0001-XX." class="form-control">
+                                    <input type="text" name="cnpj_escola" placeholder="Ex: XX.XXX.XXX/0001-XX." class="form-control">
                                 </div>   
 
                                 <div class="col-lg-6">
-                                    <label>Site (Se houver)</label>
-                                    <input type="text" name="username" placeholder=" Ex: suaescola.com.br" class="form-control">
+                                    <label>Senha</label>
+                                    <input type="password" name="senha_escola" placeholder=" Ex: suaescola.com.br" class="form-control">
                                 </div>   
                         </div>
                         <br>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <label>Nível de Ensino</label>
-                                <select class="form-control text-center">
-                                    <option>Nível de Ensino</option>
-                                    <option>Infantil</option>
-                                    <option>Fundamental I</option>  
-                                    <option>Fundamental II</option>
-                                    <option>Ensino Médio</option>
-                                    <option>Todos</option>         
-                                </select>
-                            </div>
-                            <div class="col-lg-6">
-                                <label>Estado</label>
-                                <select class="form-control text-center">
-                                    <option>Estado</option>
-                                    <option>Infantil</option>
-                                    <option>Fundamental I</option>  
-                                    <option>Fundamental II</option>
-                                    <option>Ensino Médio</option>
-                                    <option>Todos</option>         
-                                </select>
-                                <br>
-                            </div>
-                                <input type="submit" name="submit" value="Registrar Escola" class="btn btn-primary">
+                            <input type="submit" name="acao" value="cadastrar" class="btn btn-primary">
                                 
                                     
                         
