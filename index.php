@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <link rel="icon" type="image/png" sizes="16x16" href="/imagesicons8-livros-color-16.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/imagesicons8-livros-color-32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="/imagesicons8-livros-color-96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/icons8-livros-color-16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/icons8-livros-color-32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/icons8-livros-color-96.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
              <style type="text/css">
             body{
-                background-image: url("/images/background2.jpg");
+                background-image: url("images/background2.jpg");
                 background-position: center center;
                 background-size: cover;
             }
@@ -62,7 +62,7 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">
-                <img src="/images/logolearn.png" style="margin-left:5px;" width="213" height="62" width="30" height="30" alt="">
+                <img src="images/logolearn.png" style="margin-left:5px;" width="213" height="62" width="30" height="30" alt="">
               </a>
             </button>
           

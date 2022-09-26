@@ -20,13 +20,13 @@ $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
     }
 
 
-    $sql = $pdo->prepare("SELECT * FROM escola");
+    $sql = $pdo->prepare("SELECT id,nome,tel,ende,cnpj,senha FROM escola");
     $sql->execute();
 
     $fetchEscola = $sql->fetchAll();
     
     foreach ($fetchEscola as $key => $value){
-        echo '<a href="?delete='.$value['id'].'">(X)</a>'.'Nome: '.$value['nome'].' | '.'Telefone: '.$value['tel'].' | '.'Endereço: '.$value['ende'].' | '.'CNPJ: '.$value['cnpj'].' | '.'Senha: '.$value['senha'];
+        echo '<a href="?delete='.$value['id'].'">(Apagar)</a>'.'Nome: '.$value['nome'].' | '.'Telefone: '.$value['tel'].' | '.'Endereço: '.$value['ende'].' | '.'CNPJ: '.$value['cnpj'].' | '.'Senha: '.$value['senha'];
         echo'<hr>';
     }
 
